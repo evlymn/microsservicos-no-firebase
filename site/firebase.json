@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/render-topo",
+        "function": "render-topo"
+      },
+      {
+        "source": "/render-menu",
+        "function": "render-menu"
+      },
+      {
+        "source": "/listar-imagens",
+        "function": "listarImagens"
+      },
+      {
+        "source": "/render-footer",
+        "function": "renderFooter"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
